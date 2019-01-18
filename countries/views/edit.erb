@@ -1,0 +1,8 @@
+
+        <form action= '/questions/edit' method='get'>
+            <textarea name='question' placeholder='Question'><%= @question.question %></textarea>
+            <input type= 'hidden' name="id" value='<%= @question.id %>'>
+            <input type='text' value='<%= @question.answer %>' placeholder='Answer'>
+            <input type='text' value='<%= @question.flag %>' placeholder='Flag'>
+            <input type='submit' value='Save'>
+        </form>
