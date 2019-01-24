@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <form action='/option/edit/update' method=post>
+            <input type= 'hidden' name="id" value='<%= @contacts.id %>'>
+            <input type='text' value='<%= @contacts.first_name %>' placeholder='First Name'>
+            <input type='text' value='<%= @contacts.last_name %>' placeholder='Last_Name'>
+            <input type='text' value='<%= @contacts.address %>' placeholder='Address'>
+            <input type='text' value='<%= @contacts.city %>' placeholder='City'>
+            <input type='text' value='<%= @contacts.state %>' placeholder='State'>
+            <input type='text' value='<%= @contacts.zipcode %>' placeholder='Zipcode'>
+            <input type='submit' value='Save'>
+        </form> 
+    </body>
+</html>
