@@ -1,0 +1,9 @@
+<a href = '/attendees/new'>New Attendee</a>
+
+<% @attendees.each do |attendee| %>
+    <div>
+    <%= attendee.first_name %> <%= attendee.last_name %>
+    </div>
+    <a href='/attendees/edit?id=<%= attendee.id %>'>Edit</a>
+    <a href='/attendees/delete?id=<%= attendee.id %>'>Delete</a>
+<% end %>

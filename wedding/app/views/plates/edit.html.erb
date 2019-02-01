@@ -1,0 +1,15 @@
+<form action= '/plates/edit' method='post'>
+    <input type='hidden' name='id' value='<%= @plate.id %>'>
+    <div>
+        <input type='text' name='protein' value='<%=@plate.protein %>' placeholder='Protein'>
+    </div>
+    <div>
+        <input type='text' name='side' value='<%=@plate.side %>'placeholder='Side'>
+    </div>
+    <div>
+        <input type='text' name='vegetable' value='<%=@plate.vegetable %>'placeholder='Vegetable'>
+    </div>
+    <div>
+        <input type='submit' value='Save'>
+    </div>
+</form>

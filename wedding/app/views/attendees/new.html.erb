@@ -1,0 +1,18 @@
+<form action='/attendees' method='post'>
+    <div>
+        <input type='text' name='first_name' placeholder='First Name'>
+    </div>
+    <div>
+        <input type='text' name='last_name' placeholder='Last Name'>
+    </div>
+    <div>
+        <select name='plate_id'>
+            <% @plates.each do |plate| %>
+                <option value='<%= plate.id %>'><%= plate.protein %></option>
+            <% end %>
+        </select>
+    </div>
+    <div>
+        <input type='submit' value='Save'>
+    </div>
+</form>

@@ -1,0 +1,9 @@
+<h1><%= @plate.protein %></h1>
+
+<h5>Attendees:</h5>
+
+<% @plate.attendees.each do |attendee| %>
+    <div>
+        <%= attendee.first_name %> <%= attendee.last_name %>
+    </div>
+<% end %>

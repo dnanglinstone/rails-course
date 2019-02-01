@@ -1,0 +1,19 @@
+<form action= '/attendees/edit' method='post'>
+    <input type='hidden' name='id' value='<%= @attendee.id %>'>
+    <div>
+        <input type='text' name='first_name' value='<%=@attendee.first_name %>' placeholder='First Name'>
+    </div>
+    <div>
+        <input type='text' name='last_name' value='<%=@attendee.last_name %>'placeholder='Last Name'>
+    </div>
+    <div>
+        <select name='plate_id'>
+            <% @attendee.each do |plate| %>
+                <option value='<%= @attendee.plate.id %>'><%= plate.protein %></option>
+            <% end %>
+        </select>
+    </div>
+    <div>
+        <input type='submit' value='Save'>
+    </div>
+</form>
