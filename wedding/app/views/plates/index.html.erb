@@ -1,0 +1,11 @@
+<a href='/plates/new'>New</a>
+<% @plates.each do |plate| %>
+    <div>
+        <h4><%= plate.protein %></h4>
+        <%= plate.side %>
+        <p><%= plate.vegetable %></p>
+        <a href='/plates/delete?id=<%= plate.id %>'>Delete</a>
+        <a href='/plates/edit?id=<%= plate.id %>'>Edit</a>
+        <a href='/plates/show?id=<%= plate.id %>'>Show</a>
+    </div>
+<% end %>
